@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: rgb(218, 213, 213);
+            margin: 10px;
+        }
+        .flexbox1{ 
+            display: flex;
+            margin-bottom: 30px;
+        }
+        .box1{
+            width: 200px;
+            background-color: rgb(93, 143, 201);
+        }
+        .box2{
+            width: 75px;
+            background-color: rgb(255, 173, 187);
+        }
+        .flexbox2{ 
+            display: flex;
+            margin-bottom: 30px;
+        }
+        .box3{
+            width: 50px;
+            background-color: rgb(93, 143, 201);
+        }
+        .box4{
+            flex-grow: 1;
+            background-color: rgb(255, 173, 187);
+        }
+        .box5{
+            width: 75px;
+            background-color: rgb(93, 143, 201);
+        }
+        .flexbox3{ 
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 30px;
+        }
+        .box6{
+            background-color: rgb(255, 173, 187);
+        }
+        .flexbox4{ 
+            display: flex;
+            border: 1px solid black;
+            padding: 20px;
+            padding-left: 0;
+            padding-right: 0;
+             background-color: white;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .flexbox5{
+            display: flex;
+            background-color: rgb(168, 23, 235);
+            justify-content: space-between;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .home{
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .search{
+            border: 1px solid black;
+            border: none;
+            border-radius: 100px;
+            padding: 10px;
+            width: 80%;           
+            height: 20px;
+            margin-top: 10px;
+        }
+        .btn{
+            height: 30px;
+            margin-top: 15px;
+            color: white;
+            border: 1px solid white;
+            background-color: rgba(240, 248, 255, 0);
+        }
+        .btn:hover{
+            background-color: rgb(145, 143, 143);
+        }
+        .flexbox6{
+            justify-content: center;
+            height: 225px;
+            width: 400px;
+            border: 1px solid black;
+            border-radius: 20px;
+            display: block;
+            background-color: white;
+        }
+        .h{
+            border: 1px solid black;
+            border: none;
+            padding: 20px;
+            font-size: 25px;
+            
+        }
+        .number1{
+            position: relative;
+            left: 250px;
+            color: white;
+            border: 1px solid rgb(27, 101, 240);
+            border-radius: 20px;
+            background-color: rgb(27, 101, 240);
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            
+        }
+        .number2{
+            position: relative;
+            left: 190px;
+            color: white;
+            border: 1px solid rgb(27, 101, 240);
+            border-radius: 20px;
+            background-color: rgb(27, 101, 240);
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        
+        .number3{
+            position: relative;
+            left: 220px;
+            color: white;
+            border: 1px solid rgb(27, 101, 240);
+            border-radius: 20px;
+            background-color: rgb(27, 101, 240);
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flexbox1">
+        <div class="box1">200px</div>
+        <div class="box2">75px</div>
+    </div>
+
+    <div class="flexbox2">
+        <div class="box3">item1</div>
+        <div class="box4">item2</div>
+        <div class="box5">item3</div>
+    </div>
+
+    <div class="flexbox3">
+        <div class="box6">item1</div>
+        <div class="box6">item2</div>
+        <div class="box6">item3</div>
+        <div class="box6">item4</div>
+    </div>
+
+    <div class="flexbox4">
+        <div class="box6">item1</div>
+        <div class="box6">item2</div>
+    </div>
+
+    <div class="flexbox5"> 
+        <p class="home">Home</p>
+        <input type="text" placeholder="Search" class="search">
+        <button class="btn">Download</button>
+    </div>
+
+    <div class="flexbox6">
+        <div class="h">Home<span class="number1">14</span></div>
+        <div class="h">Notifications<span class="number2">3</span></div>
+        <div class="h">Messages<span class="number3">5</span></div>
+
+    </div>
+</body>
+</html>
