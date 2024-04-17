@@ -1,0 +1,83 @@
+
+body {
+    margin: 15%;
+    font-size: 16px; 
+    
+  }
+  .ALL{
+    padding: 15px;
+    background-color: white;
+    border: .2px solid grey;
+  }
+  .head0{
+    padding: 20px;
+    background-color: rgb(36, 143, 36);
+    color: white;
+    font-size: 2em;
+    border-radius: 6px;
+  }
+  .list{
+    float: left;
+  }
+  .list li{
+    border: 1px solid rgb(107, 107, 107);
+  }
+  a{
+    color: rgb(15, 15, 15);
+  }
+  .BOX{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .Style{
+    order: -1;
+    font-size: x-large;
+  }
+  .Style h1{
+    width: 800px;
+  }
+  
+  .NOstyle{
+    order: 2;
+    font-size: x-large;
+  }
+  .li{
+    position: relative;
+    background-color: rgb(233, 233, 233);
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-top: 10px;
+    color: black;
+    height: 15px;
+    list-style: none;
+    border: 1px solid black;
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    width: 250px;
+    margin-bottom: 10px;
+    margin-left: -40px;
+  }
+  .li:hover{
+    background-color: rgb(36, 143, 36);
+    color: white;
+  }
+.box2{
+    padding: 15px;
+    background-color: rgb(81, 206, 255);
+    border: 2 solid grey;
+    border-radius: 5px;
+}
+.Sidebar {
+  font-size: x-large;
+}
+.lorems{
+    margin-top: 10px;
+    padding: 11px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 5px;
+    border: .8 solid grey;
+    text-align: center;
+    font-size: large;
+}

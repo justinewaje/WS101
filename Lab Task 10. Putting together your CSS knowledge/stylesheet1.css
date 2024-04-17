@@ -1,0 +1,80 @@
+
+body {
+    margin: 15%;
+    font-size: 16px; 
+  }
+  .ALL{
+    padding: 0.5em;
+    background-color: rgba(196, 33, 22, 0.89);
+  }
+  .head0 {
+    color: white;
+    font-size: 2em; 
+    padding-left: 1em; 
+  }
+  
+  .list {
+    float: right; 
+
+  }
+  .li:hover {
+    color: rgba(196, 33, 22, 0.89);
+    background-color: white;
+  }
+  
+  a{
+    color: rgba(196, 33, 22, 0.89);
+  }
+  .li{
+    position: relative;
+    background-color: rgba(196, 33, 22, 0.89);
+    padding-bottom: 12px;
+    padding-top: 12px;
+    color: white;
+    height: 15px;
+    text-align: center;
+    list-style: none;
+    border: 1px solid rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    width: 250px;
+    margin-bottom: 10px;
+  }
+
+  .box1 {
+    border: 1px solid rgb(180, 180, 180);
+    background-color: antiquewhite;
+    padding: 0.5em 1.5em; 
+    margin:  0; 
+  }
+  
+  .Style h1 {
+    color: rgb(211, 49, 49);
+  }
+  
+  .Art1 {
+    color: rgb(228, 61, 61);
+  }
+  
+  .box2 {
+    background-color: rgba(255, 188, 200, 0.822);
+    padding: 15px; 
+    margin-left: -24px; 
+    margin-top: -1px;
+    margin-bottom: -9px;
+    width: 102.2%;
+  }
+  
+  .lorems {
+    text-align: center;
+    color: white;
+  }
+  
+  .Sidebar {
+    color: rgb(233, 50, 50);
+  }
+  
+  .NOstyle h2 {
+    color: rgb(233, 50, 50);
+  }
+  
