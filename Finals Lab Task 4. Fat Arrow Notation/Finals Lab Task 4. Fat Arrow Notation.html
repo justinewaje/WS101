@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finals Lab Task 4. Fat Arrow Notation</title>
+</head>
+<body>
+    <!--Part 1 Problem Number Determiner-->
+    <h1>Sample output:</h1>
+    <h3>
+        Enter A Number: <input type="text" id="numberInput" placeholder="Number Determiner" oninput="testFunctions()"> <br><br>
+
+        Call to ES5 Function: <br><div id="resultES5"></div><br>
+
+        Call to ES6 Function: <br><div id="resultES6"></div><br>
+    </h3>
+
+<script>
+    function testFunctions() {
+        var number = parseFloat(document.getElementById('numberInput').value);
+        if (number) {
+            document.getElementById('resultES5').innerText = numberDeterminerES5(number);
+            document.getElementById('resultES6').innerText = numberDeterminerES6(number);
+        } else {
+            document.getElementById('resultES5').innerText = '';
+            document.getElementById('resultES6').innerText = '';
+        }
+    }
+    
+    // ES5 Function
+    function numberDeterminerES5(number) {
+        if (typeof number !== 'number' || number >= 0) {
+            if (number % 2 === 0) { return "The number is even and positive"; }
+            else { return "The number is odd and positive"; }
+        } else {
+            if (number % 2 === 0) { return "The number is even and negative"; }
+            else { return "The number is odd and negative"; }
+        }
+    }
+    
+    // ES6 Fat Arrow Notation
+    const numberDeterminerES6 = (number) => {
+        if (typeof number !== 'number' || number >= 0) {
+            return number % 2 === 0 ? "The number is even and positive" : "The number is odd and positive";
+        } else {
+            return number % 2 === 0 ? "The number is even and negative" : "The number is odd and negative";
+        }
+    }
+
+    // Part 2 Problem: Create tipCalculator function
+    const tipCalculator = (sum, percentage, currency, prefix) => {
+        let tip = sum * (percentage / 100);
+        let total = sum + tip;
+        let formattedTip = `${tip.toFixed(2)}${currency}`;
+        let formattedTotal = `${total.toFixed(2)}${currency}`;
+        let beforeTip;
+        
+        if (prefix) {
+            formattedTip = `${currency}${tip.toFixed(2)}`;
+            formattedTotal = `${currency}${total.toFixed(2)}`;
+            beforeTip = `${currency}${sum.toFixed(2)}`;
+        } else {
+            beforeTip = `${sum.toFixed(2)}${currency}`;
+        }
+        
+        console.log(`
+            Sum before tip: ${beforeTip}
+            Tip percentage: ${percentage}%
+            Tip: ${formattedTip}
+            Total: ${formattedTotal}
+        `);
+    };
+    
+    // Test cases
+    tipCalculator(29.95, 18, "kr", false);
+    tipCalculator(29.95, 18, "$", true);
+</script>
+</body>
+</html>
